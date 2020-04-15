@@ -1,0 +1,16 @@
+rm -f *.png
+
+export PYTHONPATH=.:$PYTHONPATH
+
+blender                       \
+	-b                    \
+	--python-exit-code 1  \
+	-P shelf.py           \
+|                             \
+sed 1,3d
+
+
+#if [ $? -eq "0" ]; then
+#    open 0001.png
+#fi
+
