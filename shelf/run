@@ -1,16 +1,19 @@
-rm -f *.png
+#rm -f *.png
 
-export PYTHONPATH=.:$PYTHONPATH
+#export PYTHONPATH=.:$PYTHONPATH
 
-blender                       \
-	-b                    \
-	--python-exit-code 1  \
-	-P shelf.py           \
-|                             \
-sed 1,3d
+#blender                       \
+#	-b                    \
+#	--python-exit-code 1  \
+#	-P shelf.py           \
+#|                             \
+#sed 1,3d
 
 
 #if [ $? -eq "0" ]; then
 #    open 0001.png
 #fi
+
+/C/Program\ Files/Blender\ Foundation/Blender\ 2.93/blender.exe \
+-P shelf3.py
 
